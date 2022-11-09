@@ -1,0 +1,964 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasHosp_ID -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasHosp_ID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Hospital_ID"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasNDC_ID -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasNDC_ID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_NDC_ID"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#PatientHasDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#PatientHasDisease">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Type_of_Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#PatientHasRoom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#PatientHasRoom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#R_ID"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#RobotHasConstructor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#RobotHasConstructor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#RobotHasID -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#RobotHasID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot_ID"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#RoomHasPatients -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#RoomHasPatients">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#R_ID"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#corresponds_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#corresponds_to">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Disease_or_disorder"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#goes_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#goes_to">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#is_given -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#is_given">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Agent01 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Agent01">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot_ID"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#RobotHasConstructor"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Barrett_Technology"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot_ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Agent02 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Agent02">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot_ID"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#RobotHasConstructor"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Myomo"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot_ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Agent03 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Agent03">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot_ID"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#RobotHasConstructor"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Diligent_Robotics"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot_ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Behavioral_Disorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Behavioral_Disorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Disease_or_disorder"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasName"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Celexa"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Celexa2.0"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Paxil"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Prozac"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Behavioral Disorder</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&amp;conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C35470</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Cancer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Cancer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Disease_or_disorder"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasName"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#First_Round_Chemo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Cancer-Related Condition</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&amp;conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C8278</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Celexa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Celexa">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasHosp_ID"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0007"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasNDC_ID"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0456-4020-01"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Celexa2.0 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Celexa2.0">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasHosp_ID"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0007"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasNDC_ID"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0456-4020-01"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Company">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot_ID"/>
+        <rdfs:label xml:lang="en">Company</rdfs:label>
+        <skos:definition xml:lang="en">The company that constructed the robot.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Cytoxan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Cytoxan">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasHosp_ID"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0005"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasNDC_ID"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#10019-935-01"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#DTPA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#DTPA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasHosp_ID"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0004"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasNDC_ID"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#17156-251-08"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Disease_or_disorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Disease_or_disorder">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Patient"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot"/>
+        <rdfs:label xml:lang="en">Disease or Disorder</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&amp;conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C2991&amp;jump_to_nav=truehttps://bioportal.bioontology.org/ontologies/NCIT/?p=classes&amp;conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C2991&amp;jump_to_nav=true"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#First_Round_Chemo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#First_Round_Chemo">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasHosp_ID"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasHosp_ID"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Hospital_ID"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasNDC_ID"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_NDC_ID"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasName"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Patient"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot"/>
+        <rdfs:label xml:lang="en">Medicine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Hospital_ID -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Hospital_ID">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_NDC_ID"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+        <rdfs:label xml:lang="en">Medicine_Hospital_ID</rdfs:label>
+        <skos:definition xml:lang="en">The ID given to each medicine, according to hospltal records (auto-increment)</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_NDC_ID -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_NDC_ID">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+        <rdfs:label xml:lang="en">Medicine_NCD_ID</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/National_Drug_Code</rdfs:seeAlso>
+        <skos:definition xml:lang="en">The ID given to each medicine according to the National Drug Code</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine"/>
+        <rdfs:label xml:lang="en">Medicine_Name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Neoplasm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Neoplasm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Disease_or_disorder"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasName"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Cytoxan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Trisenox"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Neoplasm</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&amp;conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C3262</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Patient">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#PatientHasDisease"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Type_of_Disease"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#PatientHasRoom"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#R_ID"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot"/>
+        <rdfs:label xml:lang="en">Patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Paxil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Paxil">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasHosp_ID"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0006"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasNDC_ID"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#16590-514-90"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Prozac -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Prozac">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasHosp_ID"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0002"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasNDC_ID"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0777-3104-02"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Psychiatric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Psychiatric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Disease_or_disorder"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasName"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Celexa"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Celexa2.0"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Paxil"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Prozac"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Psychiatric Disorder</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&amp;conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C2893</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#R_ID -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#R_ID">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Patient"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#RoomHasPatients"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Patient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Type_of_Disease"/>
+        <rdfs:label xml:lang="en">Room number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Radiation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Radiation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Disease_or_disorder"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasName"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#DTPA"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#ThyroShield"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Radiation-Induced DIsorder</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&amp;conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C26684</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#RobotHasConstructor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Company"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#RobotHasID"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot_ID"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Robot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot_ID -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot_ID">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Robot"/>
+        <rdfs:label xml:lang="en">Robot_ID</rdfs:label>
+        <skos:definition>Unique identifier for every robot.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Room_001 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Room_001">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#R_ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Room_002 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Room_002">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#R_ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Room_003 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Room_003">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#R_ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Room_004 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Room_004">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#R_ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Room_005 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Room_005">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#R_ID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#ThyroShield -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#ThyroShield">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasHosp_ID"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0003"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasNDC_ID"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#59465-210-01"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Trisenox -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Trisenox">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasHosp_ID"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#MedicineHasNDC_ID"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#63459-600-10"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Type_of_Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Type_of_Disease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Patient"/>
+        <rdfs:label xml:lang="en">Type_of_Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Barrett_Technology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Barrett_Technology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Diligent_Robotics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Diligent_Robotics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Myomo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Myomo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Hospital_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Hospital_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Hospital_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0004">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Hospital_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0005">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Hospital_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0006">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Hospital_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0007">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Hospital_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0008 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0008">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Hospital_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Hospital_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0010">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_Hospital_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0456-4020-01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0456-4020-01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_NDC_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0777-3104-02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#0777-3104-02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_NDC_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#10019-935-01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#10019-935-01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_NDC_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#16590-514-90 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#16590-514-90">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_NDC_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#17156-251-08 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#17156-251-08">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_NDC_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#59465-210-01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#59465-210-01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_NDC_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#63459-600-10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#63459-600-10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Medicine_NDC_ID"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Agent01"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Agent02"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Agent03"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Behavioral_Disorder"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Cancer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Neoplasm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Psychiatric"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Radiation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Room_001"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Room_002"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Room_003"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Room_004"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/manosanastassis/ontologies/2021/4/untitled-ontology-5#Room_005"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
